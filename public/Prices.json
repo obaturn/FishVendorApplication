@@ -1,0 +1,21 @@
+{
+  "Fish": {
+    "Kote": {
+      "kilo": 3000,
+      "carton": 54500
+    },
+    "Titus": {
+      "kilo": 7500,
+      "carton": 120000
+    }
+  },
+  "Chicken": {
+    "Soft Chicken": {
+      "kilo": 4800
+    },
+    "Orobo Chicken": {
+      "kilo": 6000,
+      "carton": 43000
+    }
+  }
+}

@@ -1,0 +1,96 @@
+.container {
+  padding: 40px;
+  max-width: 600px;
+  margin: auto;
+  background-color: #6fd1d1;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  color: rebeccapurple;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+form label {
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 6px;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #00aa8f;
+  outline: none;
+}
+
+hr {
+  margin: 25px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+  background: #fff7d6;
+  padding: 15px;
+  border-left: 5px solid #f7c325;
+  border-radius: 6px;
+}
+
+button {
+  background-color: #00aa8f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #007b68;
+}
+
+/* ✅ Mobile-friendly responsiveness */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 15px;
+    padding: 10px 16px;
+  }
+}

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from './HeroBar.module.css';
 
 const images = [
@@ -10,11 +11,11 @@ const images = [
   'https://res.cloudinary.com/dkrpginfm/image/upload/v1748455742/orobo_chicken_gr52mj.png',
 ];
 
-
 const text = "MOVICKS CREATIONS";
 
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const navigate = useNavigate(); // 👈 use this to navigate
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -24,6 +25,10 @@ const Hero = () => {
     }, 3000);
     return () => clearInterval(interval);
   }, []);
+
+  const handleOrderClick = () => {
+    navigate('/order'); // 👈 this takes you to OrderPage
+  };
 
   return (
     <div
@@ -37,7 +42,9 @@ const Hero = () => {
           </span>
         ))}
       </h1>
-      <button className={styles.button}>Order Now</button>
+      <button className={styles.button} onClick={handleOrderClick}>
+        Order Now
+      </button>
     </div>
   );
 };
