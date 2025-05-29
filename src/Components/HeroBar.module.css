@@ -1,0 +1,52 @@
+.hero {
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  transition: background-image 1s ease-in-out;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.letter {
+  animation: colorCycle 2s infinite;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 2px;
+}
+
+.button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background-color: green;
+}
+
+@keyframes colorCycle {
+  0% { color: red; }
+  25% { color: yellow; }
+  50% { color: green; }
+  75% { color: blue; }
+  100% { color: violet; }
+}
