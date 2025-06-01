@@ -3,7 +3,8 @@ import TopNav from './Components/TopNav';
 import Hero from './Components/Hero';
 import OrderPage from './Components/Order';
 import Contact from './Components/Contact'; 
-
+import AboutUs from './Components/AboutUs'; 
+import Bottom from './Components/Bottom';
 import './App.css';
 
 function AppContent() {
@@ -18,8 +19,10 @@ function AppContent() {
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/order" element={<OrderPage />} />
-        <Route path="/contact" element={<Contact />} /> {/* 🆕 Add this */}
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<AboutUs />} />
       </Routes>
+      <Bottom/>
     </div>
   );
 }

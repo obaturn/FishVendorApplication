@@ -16,7 +16,7 @@ export default function TopNav() {
             </div>
             <div className={styles.spacer} />
             <div className={styles.navLinks}>
-                <button className={styles.navButton}>About Us</button>
+                <button className={styles.navButton} onClick={() => navigate('/about')}>About Us</button>
                 <button className={styles.navButton}>Profile</button>
                 <button className={styles.navButton} onClick={() => navigate('/contact')}>Contact</button> {/* 🆕 */}
                 <button className={styles.navButton}>Sign Up</button>
@@ -26,7 +26,7 @@ export default function TopNav() {
             </div>
             {menuOpen && (
                 <div className={styles.dropdownMenu}>
-                    <button className={styles.navButton} onClick={() => setMenuOpen(false)}>About Us</button>
+                    <button className={styles.navButton} onClick={() => { navigate('/about'); setMenuOpen(false); }}>About Us</button> 
                     <button className={styles.navButton} onClick={() => setMenuOpen(false)}>Profile</button>
                     <button className={styles.navButton} onClick={() => { navigate('/contact'); setMenuOpen(false); }}>Contact</button> {/* 🆕 */}
                     <button className={styles.navButton} onClick={() => setMenuOpen(false)}>Register</button>
